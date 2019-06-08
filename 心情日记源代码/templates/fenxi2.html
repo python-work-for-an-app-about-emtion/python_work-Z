@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>心情日记</title>
+<link rel="stylesheet" type="text/css" href="../static/css/fenxi2style.css" />
+</head>
+<body>
+<div id="container">
+	<div id="holder" class="clearfix">
+		<div id="logo">
+			<h1><input type="submit" name="usernames" value="usernames" >的心情日记</h1>
+		</div>
+		<div id="navigation">
+			<ul>
+				<li><a href="./shouye">主页</a></li>
+				<li><a href="./fenxi">情绪分析</a></li>
+				<li><a href="./zhongxin">个人中心</a></li>
+			</ul>
+		</div>
+		<div id="header"></div>
+		<div id="content">
+			<p >情绪分析结果为：情绪指数为{{sentiment_index}}（偏中性）</p>
+            <p>文章推荐：<a href="{{sentiment_tuijian_store}}">{{sentiment_tuijian_name}}</a></p>
+            <p>文章推荐：<a href="http://www.duwenzhang.com/wenzhang/renshengzheli/">人生感悟类</a></p>
+            <p>文章推荐：<a href="https://www.duanwenxue.com/jingdian/zheli/">人生哲学类</a></p>
+		</div>
+    </div>
+</div>
+</body>
+</html>

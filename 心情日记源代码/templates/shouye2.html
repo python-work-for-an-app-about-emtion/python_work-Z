@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>心情日记</title>
+<link rel="stylesheet" type="text/css" href="../static/css/shouyestyle.css" />
+</head>
+<body>
+<div id="container">
+	<div id="holder" class="clearfix">
+		<div id="logo">
+			<h1><input type="submit" name="usernames" value="usernames" >的心情日记</h1>
+		</div>
+		<div id="navigation">
+			<ul>
+				<li><a href="./shouye">主页</a></li>
+				<li><a href="./fenxi2">情绪分析</a></li>
+				<li><a href="./zhongxin">个人中心</a></li>
+			</ul>
+		</div>
+		<div id="header"></div>
+		<div id="content">
+			<form id="form1" name="form1" action="http://127.0.0.1:5000/fenxi" method="post" >
+				<textarea name="store"  style="width: 590;height: 400" placeholder="快来开始今天的心情之旅吧" >{{store1}}</textarea>
+				<input type="submit" value="保存" name="login" >
+			</form>
+			<form id="form2" name="form2" action="http://127.0.0.1:5000/fenxi1" method="post" >
+				<input type="submit" value="语音输入(10秒)" name="login" >
+			</form>
+		</div>
+		<div id="news">
+			<div class="newsItem">
+				<h1><a href="#">4月23日&nbsp;心情：偏消极</a></h1>
+				<p>Please be so kind as to leave the copyright message in the footer intact, if you must remove it, I would still appreciate a link to my site.</p>
+			</div>
+			<div class="newsItem">
+				<h1><a href="#">4月24日&nbsp;心情：偏积极</a></h1>
+				<p>You are free to use this design for anythign you wish. I do ask that the &quot;design by sitecreative&quot; stays in the footer with a link back to my site. Please don't sell it or re-distribute it. </p>
+			</div>
+	  </div>
+	</div>
+
+	<div id="footer">
+		<ul>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开心快乐每一天！！！</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
